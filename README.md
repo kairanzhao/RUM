@@ -1,9 +1,8 @@
 # RUM
 This is the official code repository of the following papers:
 
-- **[NeurIPS 2024] What makes unlearning hard and what to do about it**
-- **[NeurIPS 2024 FITML Workshop] Scalability of memorization-based machine unlearning**
-
+- **NeurIPS 2024: [What makes unlearning hard and what to do about it](https://arxiv.org/abs/2406.01257)**
+- **NeurIPS 2024 FITML Workshop: [Scalability of memorization-based machine unlearning](https://openreview.net/pdf?id=VX9HGFiFF1)**
 
 
 ## Original model training
