@@ -1,16 +1,21 @@
 # RUM
-This is a PyThon implementation of RUM. 
+This is the official code repository of the following papers:
 
-# Original model training
+- **[NeurIPS 2024] What makes unlearning hard and what to do about it**
+- **[NeurIPS 2024 FITML Workshop] Scalability of memorization-based machine unlearning**
+
+
+
+## Original model training
 ```
 python main_train.py --dataset {dataset name} --arch {model architecture} --epochs {epochs} --lr {learning_rate} --batch_size {batch_size}
 ```
 
-# Unlearning
+## Unlearning
 
 For each algorithm, we use --mem parameter for memorization experiments and --group_index for ES experiments.
 
-## RUM
+### RUM
 
 ```
 python main_rum.py --unlearn ${unlearn method} --mem mix --num_indexes_to_replace 3000 --dataset {dataset name} --arch {model architecture} --epochs {epochs for training the original model} --lr 0.1 --batch_size 256
@@ -83,7 +88,7 @@ python analysis.py --dataset {dataset name} --arch {model architecture} --no_aug
 python analysis_mia.py --dataset {dataset name} --arch {model architecture} --no_aug --unlearn ${unlearn method} --mem_proxy {memorization proxy} --mem {memorization group} --num_indexes_to_replace 3000
 ```
 
-# References
+## References
 We have used the code from the following repositories:
 
 [SalUn] (https://github.com/OPTML-Group/Unlearn-Saliency)
