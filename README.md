@@ -86,7 +86,7 @@ python analysis.py --dataset {dataset name} --arch {model architecture} --no_aug
 ```
 python analysis_mia.py --dataset {dataset name} --arch {model architecture} --no_aug --unlearn ${unlearn method} --mem_proxy {memorization proxy} --mem {memorization group} --num_indexes_to_replace 3000
 ```
-### Citation
+## Citation
 If you find this work useful, please cite our paper:
 ```
 @misc{zhao2024makes,
