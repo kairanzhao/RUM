@@ -34,7 +34,7 @@ best_sa = 0
 
 def wandb_init(args):
     if args.wandb_group_name is None:
-        args.wandb_group_name = f"{args.dataset}_{args.arch}_{args.forget_class}_{args.num_to_forget}"
+        args.wandb_group_name = f"{args.dataset}_{args.arch}_{args.class_to_replace}_{args.num_indexes_to_replace}"
     if args.wandb_run_id is not None:
         logger = wandb.init(id=args.wandb_run_id, resume="must")
     else:
