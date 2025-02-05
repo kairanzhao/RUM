@@ -78,13 +78,24 @@ python main_random.py --unlearn RL --unlearn_lr 0.1 --unlearn_epochs 10 --num_in
 ```
 python main_random.py --unlearn RL_og --unlearn_lr 0.1 --unlearn_epochs 10 --num_indexes_to_replace 3000 --mem {memorization group} --group_index {ES group} 
 ```
-### Get ToW / ToW-MIA
+### Evaluation with ToW / ToW-MIA
 
 ```
 python analysis.py --dataset {dataset name} --arch {model architecture} --no_aug --unlearn ${unlearn method} --mem_proxy {memorization proxy} --mem {memorization group} --num_indexes_to_replace 3000
 ```
 ```
 python analysis_mia.py --dataset {dataset name} --arch {model architecture} --no_aug --unlearn ${unlearn method} --mem_proxy {memorization proxy} --mem {memorization group} --num_indexes_to_replace 3000
+```
+### Citation
+If you find this work useful, please cite our paper:
+```
+@misc{zhao2024makes,
+      title={What makes unlearning hard and what to do about it}, 
+      author={Kairan Zhao and Meghdad Kurmanji and George-Octavian Bărbulescu and Eleni Triantafillou and Peter Triantafillou},
+      year={2024},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+}
 ```
 
 ## References
