@@ -4,6 +4,8 @@ This is the official code repository of the following papers:
 - **NeurIPS 2024: [What makes unlearning hard and what to do about it](https://arxiv.org/abs/2406.01257)**
 - **NeurIPS 2024 FITML Workshop: [Scalability of memorization-based machine unlearning](https://openreview.net/pdf?id=VX9HGFiFF1)**
 
+We also release our computed **memorization scores for the CIFAR-10 dataset**, available for download [here](https://drive.google.com/file/d/1RCTrrI8jbCk6n1AWOtWJS3IubY-jtjRl/view?usp=sharing).
+
 
 ## Original model training
 ```
@@ -87,14 +89,23 @@ python analysis.py --dataset {dataset name} --arch {model architecture} --no_aug
 python analysis_mia.py --dataset {dataset name} --arch {model architecture} --no_aug --unlearn ${unlearn method} --mem_proxy {memorization proxy} --mem {memorization group} --num_indexes_to_replace 3000
 ```
 ## Citation
-If you find this work useful, please cite our paper:
+If you find this work useful, please cite our paper(s):
 ```
-@misc{zhao2024makes,
-      title={What makes unlearning hard and what to do about it}, 
-      author={Kairan Zhao and Meghdad Kurmanji and George-Octavian Bărbulescu and Eleni Triantafillou and Peter Triantafillou},
-      year={2024},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
+@article{zhao2024makes,
+  title={What makes unlearning hard and what to do about it},
+  author={Zhao, Kairan and Kurmanji, Meghdad and B{\u{a}}rbulescu, George-Octavian and Triantafillou, Eleni and Triantafillou, Peter},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={12293--12333},
+  year={2024}
+}
+```
+```
+@article{zhao2024scalability,
+  title={Scalability of memorization-based machine unlearning},
+  author={Zhao, Kairan and Triantafillou, Peter},
+  journal={arXiv preprint arXiv:2410.16516},
+  year={2024}
 }
 ```
 
